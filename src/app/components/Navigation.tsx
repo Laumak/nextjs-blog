@@ -6,7 +6,7 @@ const Navigation = () => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   return (
-    <nav className="h-20 flex items-center justify-between border-b-white border-b px-5">
+    <nav className="h-20 flex items-center justify-between border-b-text-gray-500 border-b-2 px-5">
       <button
         data-collapse-toggle="navbar-default"
         type="button"
