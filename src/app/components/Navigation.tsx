@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 
 const Navigation = () => {
-  const [mobileNavOpen, setMobileNavOpen] = useState(true);
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   return (
     <nav className="h-20 flex items-center justify-between border-b-white border-b px-5">
