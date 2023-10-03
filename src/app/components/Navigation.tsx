@@ -6,13 +6,16 @@ const Navigation = () => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   return (
-    <nav className="h-20 flex items-center justify-between border-b-text-gray-500 border-b-2 px-5">
+    <nav
+      className="h-20 flex items-center justify-between border-b-text-gray-500 border-b-2 px-5"
+      role="navigation"
+    >
       <button
         data-collapse-toggle="navbar-default"
         type="button"
-        className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 justify-self-end"
+        className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden justify-self-end"
         aria-controls="navbar-default"
-        aria-expanded="false"
+        aria-expanded={!!mobileNavOpen}
         onClick={() => setMobileNavOpen(!mobileNavOpen)}
       >
         <span className="sr-only">Open main menu</span>
@@ -34,13 +37,11 @@ const Navigation = () => {
       </button>
 
       {!!mobileNavOpen && (
-        <div id="navbar-default" className="">
-          <ul className="">
-            <li className="">Nav 1</li>
-            <li className="">Nav 2</li>
-            <li className="">Nav 3</li>
-          </ul>
-        </div>
+        <ul className="" id="navbar-default">
+          <li className="">Nav 1</li>
+          <li className="">Nav 2</li>
+          <li className="">Nav 3</li>
+        </ul>
       )}
     </nav>
   );
