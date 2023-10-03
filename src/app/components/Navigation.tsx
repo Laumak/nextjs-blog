@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-export default function () {
+const Navigation = () => {
   const [mobileNavOpen, setMobileNavOpen] = useState(true);
 
   return (
@@ -44,4 +44,6 @@ export default function () {
       )}
     </nav>
   );
-}
+};
+
+export default Navigation;
