@@ -60,12 +60,12 @@ const Navigation = () => {
       <div
         className={`${
           mobileNavOpen ? '' : 'hidden '
-        }h-screen w-screen z-10 absolute bg-white top-0 bottom-0 left-0 right-0`}
+        }h-screen w-screen z-10 absolute bg-white top-0 bottom-0 left-0 right-0 flex justify-center`}
       >
-        <ul id="navbar-default">
-          <li>Nav 1</li>
-          <li>Nav 2</li>
-          <li>Nav 3</li>
+        <ul className="text-4xl self-center" id="navbar-default">
+          <li className="p-5">Nav 1</li>
+          <li className="p-5">Nav 2</li>
+          <li className="p-5">Nav 3</li>
         </ul>
 
         <CloseIcon
