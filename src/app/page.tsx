@@ -4,7 +4,7 @@ import Navigation from './components/Navigation';
 
 export default function Home() {
   return (
-    <div>
+    <React.Fragment>
       <header>
         <Navigation />
       </header>
@@ -14,6 +14,6 @@ export default function Home() {
           <h1 className="text-6xl">Hello world!</h1>
         </div>
       </main>
-    </div>
+    </React.Fragment>
   );
 }
