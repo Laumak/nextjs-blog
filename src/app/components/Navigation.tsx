@@ -36,13 +36,13 @@ const Navigation = () => {
         </svg>
       </button>
 
-      {!!mobileNavOpen && (
-        <ul className="" id="navbar-default">
-          <li className="">Nav 1</li>
-          <li className="">Nav 2</li>
-          <li className="">Nav 3</li>
+      <div className={`${mobileNavOpen ? '' : 'hidden'} h-full w-full z-10`}>
+        <ul id="navbar-default">
+          <li>Nav 1</li>
+          <li>Nav 2</li>
+          <li>Nav 3</li>
         </ul>
-      )}
+      </div>
     </nav>
   );
 };
