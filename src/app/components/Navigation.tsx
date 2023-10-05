@@ -6,10 +6,8 @@ const Navigation = () => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   return (
-    <nav
-      className="h-20 flex items-center justify-between border-b-text-gray-500 border-b-2 px-5"
-      role="navigation"
-    >
+    <nav role="navigation">
+      <div className="h-20 flex items-center justify-between border-b-text-gray-500 border-b-2 px-5">
       <button
         data-collapse-toggle="navbar-default"
         type="button"
@@ -35,8 +33,13 @@ const Navigation = () => {
           />
         </svg>
       </button>
+      </div>
 
-      <div className={`${mobileNavOpen ? '' : 'hidden'} h-full w-full z-10`}>
+      <div
+        className={`${
+          mobileNavOpen ? '' : 'hidden '
+        }h-screen w-screen z-10 absolute bg-white top-0 bottom-0 left-0 right-0`}
+      >
         <ul id="navbar-default">
           <li>Nav 1</li>
           <li>Nav 2</li>
