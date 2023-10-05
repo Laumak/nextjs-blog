@@ -1,39 +1,25 @@
 'use client';
 
-import React, { useState, MouseEventHandler } from 'react';
-import { XCircleIcon } from '@heroicons/react/24/outline';
+import React, { useState } from 'react';
+import { Bars3Icon, XCircleIcon } from '@heroicons/react/24/outline';
 
 const Navigation = () => {
-  const [mobileNavOpen, setMobileNavOpen] = useState(true);
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   return (
-    <nav role="navigation">
-      <div className="h-20 flex items-center justify-between border-b-text-gray-500 border-b-2 px-5">
-        <button
-          data-collapse-toggle="navbar-default"
-          type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden justify-self-end"
-          aria-controls="navbar-default"
-          aria-expanded={!!mobileNavOpen}
-          onClick={() => setMobileNavOpen(!mobileNavOpen)}
-        >
-          <span className="sr-only">Open main menu</span>
-          <svg
-            className="w-5 h-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
-          >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M1 1h15M1 7h15M1 13h15"
-            />
-          </svg>
-        </button>
+    <nav role="navigation" className="absolute top-0 left-0 right-0">
+      <div className="h-20 flex items-center justify-end border-b-text-gray-500 border-b-2 px-5">
+        {mobileNavOpen ? (
+          <XCircleIcon
+            className="w-12 h-12 text-gray-500 md:hidden z-20"
+            onClick={() => setMobileNavOpen(!mobileNavOpen)}
+          />
+        ) : (
+          <Bars3Icon
+            className="w-10 h-10 text-gray-500 md:hidden"
+            onClick={() => setMobileNavOpen(!mobileNavOpen)}
+          />
+        )}
       </div>
 
       <div
@@ -46,11 +32,6 @@ const Navigation = () => {
           <li className="p-5">Nav 2</li>
           <li className="p-5">Nav 3</li>
         </ul>
-
-        <XCircleIcon
-          className="w-12 h-12 absolute top-2 right-2 text-slate-500"
-          onClick={() => setMobileNavOpen(!mobileNavOpen)}
-        />
       </div>
     </nav>
   );
