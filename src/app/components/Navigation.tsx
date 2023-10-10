@@ -7,20 +7,24 @@ const Navigation = () => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   return (
-    <nav role="navigation" className="absolute top-0 left-0 right-0">
-      <div className="h-20 flex items-center justify-end border-b-text-gray-500 border-b-2 px-5">
+    <nav
+      role="navigation"
+      className="mx-4 h-12 flex justify-between border-b-black border-b items-center"
+    >
+      <h1 className="text-3xl">Blog</h1>
+      <React.Fragment>
         {mobileNavOpen ? (
           <XCircleIcon
-            className="w-12 h-12 text-gray-500 md:hidden z-20"
+            className="w-6 h-6 md:hidden z-20"
             onClick={() => setMobileNavOpen(!mobileNavOpen)}
           />
         ) : (
           <Bars3Icon
-            className="w-10 h-10 text-gray-500 md:hidden"
+            className="w-6 h-6 md:hidden"
             onClick={() => setMobileNavOpen(!mobileNavOpen)}
           />
         )}
-      </div>
+      </React.Fragment>
 
       <div
         className={`${

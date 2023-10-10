@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Home() {
   return (
-    <main className="mt-28">
+    <main className="m-4">
       <article className="mb-10">
         <h2 className="text-2xl">Quis duis qui nisi in cupidatat</h2>
         <small>10.10.2023</small>
