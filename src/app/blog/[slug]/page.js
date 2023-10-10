@@ -9,8 +9,6 @@ export default function BlogPage() {
 
         <small>10.10.2023</small>
 
-        <Image className="h-auto max-w-full" fill sizes="100%" src="/test.jpg" alt="image description"></Image>
-
         <p className="mb-5">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat
           blanditiis consequatur voluptatem. Qui magnam ratione dicta
