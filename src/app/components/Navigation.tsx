@@ -41,10 +41,13 @@ const Navigation = () => {
             onClick={() => handleOnMobileNavClick(!mobileNavOpen)}
           />
         ) : (
-          <Bars3Icon
-            className="w-6 h-6 md:hidden"
+          <div
+            className="flex justify-center items-center md:hidden"
             onClick={() => handleOnMobileNavClick(!mobileNavOpen)}
-          />
+          >
+            <Bars3Icon className="w-6 h-6 mr-2" />
+            Menu
+          </div>
         )}
       </React.Fragment>
 
