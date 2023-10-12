@@ -34,7 +34,7 @@ const Navigation = () => {
         <h1 className="text-3xl">Blog</h1>
       </Link>
 
-      <React.Fragment>
+      <button type="button" aria-controls="main-navigation">
         {mobileNavOpen ? (
           <XCircleIcon
             className="w-6 h-6 md:hidden z-20"
@@ -49,14 +49,14 @@ const Navigation = () => {
             Menu
           </div>
         )}
-      </React.Fragment>
+      </button>
 
       <div
         className={`${
           mobileNavOpen ? '' : 'hidden '
         }h-screen w-screen z-10 absolute bg-white top-0 bottom-0 left-0 right-0 flex justify-center`}
       >
-        <ul className="text-4xl self-center text-center" id="navbar-default">
+        <ul className="text-4xl self-center text-center" id="main-navigation">
           <li className="mb-10" onClick={() => handleOnMobileNavClick(false)}>
             <Link href="/">Front page</Link>
           </li>
