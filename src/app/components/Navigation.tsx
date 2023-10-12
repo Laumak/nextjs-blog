@@ -53,14 +53,14 @@ const Navigation = () => {
           mobileNavOpen ? '' : 'hidden '
         }h-screen w-screen z-10 absolute bg-white top-0 bottom-0 left-0 right-0 flex justify-center`}
       >
-        <ul className="text-4xl self-center" id="navbar-default">
-          <li onClick={() => handleOnMobileNavClick(false)}>
+        <ul className="text-4xl self-center text-center" id="navbar-default">
+          <li className="mb-10" onClick={() => handleOnMobileNavClick(false)}>
             <Link href="/blog/test">Blog test</Link>
           </li>
-          <li onClick={() => handleOnMobileNavClick(false)}>
+          <li className="mb-10" onClick={() => handleOnMobileNavClick(false)}>
             <Link href="/not-found">Not found</Link>
           </li>
-          <li onClick={() => handleOnMobileNavClick(false)}>
+          <li className="mb-10" onClick={() => handleOnMobileNavClick(false)}>
             <Link href="/">Front page</Link>
           </li>
         </ul>
