@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { Bars3Icon, XCircleIcon } from '@heroicons/react/24/outline';
 
 // Hide body overflow when modal is open. This way the page can't be scrolled
@@ -29,7 +30,10 @@ const Navigation = () => {
       role="navigation"
       className="mx-4 h-12 flex justify-between border-b-black border-b items-center"
     >
-      <h1 className="text-3xl">Blog</h1>
+      <Link href="/">
+        <h1 className="text-3xl">Blog</h1>
+      </Link>
+
       <React.Fragment>
         {mobileNavOpen ? (
           <XCircleIcon
@@ -50,9 +54,15 @@ const Navigation = () => {
         }h-screen w-screen z-10 absolute bg-white top-0 bottom-0 left-0 right-0 flex justify-center`}
       >
         <ul className="text-4xl self-center" id="navbar-default">
-          <li className="p-5">Nav 1</li>
-          <li className="p-5">Nav 2</li>
-          <li className="p-5">Nav 3</li>
+          <li onClick={() => handleOnMobileNavClick(false)}>
+            <Link href="/blog/test">Blog test</Link>
+          </li>
+          <li onClick={() => handleOnMobileNavClick(false)}>
+            <Link href="/not-found">Not found</Link>
+          </li>
+          <li onClick={() => handleOnMobileNavClick(false)}>
+            <Link href="/">Front page</Link>
+          </li>
         </ul>
       </div>
     </nav>
