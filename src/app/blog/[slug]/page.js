@@ -3,7 +3,6 @@ import Image from 'next/image';
 
 export default function BlogPage() {
   return (
-    <main className="mt-28 mb-5">
       <article>
         <h1 className="text-2xl">Quis duis qui nisi in cupidatat</h1>
 
@@ -40,6 +39,5 @@ export default function BlogPage() {
           Quis ipsum consequat laborum consequat est magna id. Proident commodo aliqua sint eu tempor proident officia proident aliqua in commodo eiusmod qui quis. Eu anim eu ipsum anim duis esse. Velit amet deserunt laboris consequat excepteur amet pariatur irure. Sint sit Lorem consectetur labore dolor culpa. Laborum laborum elit enim nostrud duis ea. Id proident consectetur tempor eu qui sit commodo duis sunt.
         </p>
       </article>
-    </main>
   );
 }

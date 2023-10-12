@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Home() {
   return (
-    <main className="m-4">
+    <React.Fragment>
       <article className="mb-10">
         <h2 className="text-2xl">Quis duis qui nisi in cupidatat</h2>
         <small>10.10.2023</small>
@@ -57,6 +57,6 @@ export default function Home() {
           repudiandae aut ea voluptatum, tempora magni.
         </p>
       </article>
-    </main>
+    </React.Fragment>
   );
 }

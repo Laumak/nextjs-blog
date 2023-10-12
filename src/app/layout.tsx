@@ -24,7 +24,7 @@ export default function RootLayout({
           <Navigation />
         </header>
 
-        {children}
+        <main className="m-4">{children}</main>
         <Analytics />
       </body>
     </html>
