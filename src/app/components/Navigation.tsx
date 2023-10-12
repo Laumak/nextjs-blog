@@ -34,7 +34,12 @@ const Navigation = () => {
         <h1 className="text-3xl">Blog</h1>
       </Link>
 
-      <button type="button" aria-controls="main-navigation" className="z-20">
+      <button
+        aria-controls="main-navigation"
+        className="z-20"
+        aria-label={mobileNavOpen ? 'Close menu' : 'Open menu'}
+        type="button"
+      >
         {mobileNavOpen ? (
           <span
             className="flex justify-center items-center md:hidden"
