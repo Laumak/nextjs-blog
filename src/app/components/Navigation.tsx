@@ -3,8 +3,26 @@
 import React, { useState } from 'react';
 import { Bars3Icon, XCircleIcon } from '@heroicons/react/24/outline';
 
+// Hide body overflow when modal is open. This way the page can't be scrolled
+// while mobile navigation is open.
+const toggleBodyOverflow = (nextVisibilityState: Boolean) => {
+  const bodyClassList = document.getElementsByTagName('body')[0].classList;
+
+  if (nextVisibilityState === true) {
+    bodyClassList.add('overflow-hidden');
+  } else {
+    bodyClassList.remove('overflow-hidden');
+  }
+};
+
 const Navigation = () => {
-  const [mobileNavOpen, setMobileNavOpen] = useState(false);
+  const [mobileNavOpen, setMobileNavOpen] = useState<Boolean>(false);
+
+  const handleOnMobileNavClick = (nextVisibilityState: Boolean) => {
+    setMobileNavOpen(nextVisibilityState);
+
+    toggleBodyOverflow(nextVisibilityState);
+  };
 
   return (
     <nav
@@ -16,12 +34,12 @@ const Navigation = () => {
         {mobileNavOpen ? (
           <XCircleIcon
             className="w-6 h-6 md:hidden z-20"
-            onClick={() => setMobileNavOpen(!mobileNavOpen)}
+            onClick={() => handleOnMobileNavClick(!mobileNavOpen)}
           />
         ) : (
           <Bars3Icon
             className="w-6 h-6 md:hidden"
-            onClick={() => setMobileNavOpen(!mobileNavOpen)}
+            onClick={() => handleOnMobileNavClick(!mobileNavOpen)}
           />
         )}
       </React.Fragment>
