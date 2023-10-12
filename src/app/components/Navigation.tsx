@@ -34,20 +34,23 @@ const Navigation = () => {
         <h1 className="text-3xl">Blog</h1>
       </Link>
 
-      <button type="button" aria-controls="main-navigation">
+      <button type="button" aria-controls="main-navigation" className="z-20">
         {mobileNavOpen ? (
-          <XCircleIcon
-            className="w-6 h-6 md:hidden z-20"
+          <span
+            className="flex justify-center items-center md:hidden"
             onClick={() => handleOnMobileNavClick(!mobileNavOpen)}
-          />
+          >
+            <XCircleIcon className="w-6 h-6 mr-1" />
+            Close
+          </span>
         ) : (
-          <div
+          <span
             className="flex justify-center items-center md:hidden"
             onClick={() => handleOnMobileNavClick(!mobileNavOpen)}
           >
             <Bars3Icon className="w-6 h-6 mr-2" />
             Menu
-          </div>
+          </span>
         )}
       </button>
 
