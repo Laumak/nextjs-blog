@@ -23,3 +23,5 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 ## The app is deployed using Vercel
 
 The application is published here: https://nextjs-blog-three-iota-52.vercel.app/.
+
+Vercel configuration can be accessed here: https://vercel.com/laumak1s-projects/nextjs-blog.
