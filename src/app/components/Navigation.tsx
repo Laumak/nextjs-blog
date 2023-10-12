@@ -55,13 +55,13 @@ const Navigation = () => {
       >
         <ul className="text-4xl self-center text-center" id="navbar-default">
           <li className="mb-10" onClick={() => handleOnMobileNavClick(false)}>
+            <Link href="/">Front page</Link>
+          </li>
+          <li className="mb-10" onClick={() => handleOnMobileNavClick(false)}>
             <Link href="/blog/test">Blog test</Link>
           </li>
           <li className="mb-10" onClick={() => handleOnMobileNavClick(false)}>
             <Link href="/not-found">Not found</Link>
-          </li>
-          <li className="mb-10" onClick={() => handleOnMobileNavClick(false)}>
-            <Link href="/">Front page</Link>
           </li>
         </ul>
       </div>
