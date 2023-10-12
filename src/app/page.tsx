@@ -1,10 +1,13 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function Home() {
   return (
     <React.Fragment>
       <article className="mb-10">
-        <h2 className="text-2xl">Quis duis qui nisi in cupidatat</h2>
+        <h2 className="text-2xl">
+          <Link href="/blog/test">Quis duis qui nisi in cupidatat</Link>
+        </h2>
         <small>10.10.2023</small>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat
@@ -15,7 +18,9 @@ export default function Home() {
       </article>
 
       <article className="mb-10">
-        <h2 className="text-2xl">Quis duis qui nisi in cupidatat</h2>
+        <h2 className="text-2xl">
+          <Link href="/blog/test">Quis duis qui nisi in cupidatat</Link>
+        </h2>
         <small>10.10.2023</small>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat
@@ -26,7 +31,9 @@ export default function Home() {
       </article>
 
       <article className="mb-10">
-        <h2 className="text-2xl">Quis duis qui nisi in cupidatat</h2>
+        <h2 className="text-2xl">
+          <Link href="/blog/test">Quis duis qui nisi in cupidatat</Link>
+        </h2>
         <small>10.10.2023</small>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat
@@ -37,7 +44,9 @@ export default function Home() {
       </article>
 
       <article className="mb-10">
-        <h2 className="text-2xl">Quis duis qui nisi in cupidatat</h2>
+        <h2 className="text-2xl">
+          <Link href="/blog/test">Quis duis qui nisi in cupidatat</Link>
+        </h2>
         <small>10.10.2023</small>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat
@@ -48,7 +57,9 @@ export default function Home() {
       </article>
 
       <article className="mb-10">
-        <h2 className="text-2xl">Quis duis qui nisi in cupidatat</h2>
+        <h2 className="text-2xl">
+          <Link href="/blog/test">Quis duis qui nisi in cupidatat</Link>
+        </h2>
         <small>10.10.2023</small>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat
