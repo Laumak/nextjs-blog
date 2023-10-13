@@ -1,5 +1,10 @@
 import React from 'react';
-import Image from 'next/image';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Blog - Article',
+  description: 'An article page of a certain blog.',
+};
 
 export default function BlogPage() {
   return (
