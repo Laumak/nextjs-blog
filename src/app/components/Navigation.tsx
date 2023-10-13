@@ -39,6 +39,7 @@ const Navigation = () => {
 
       <button
         aria-controls="main-navigation"
+        aria-expanded={!!mobileNavOpen}
         className="z-20"
         aria-label={mobileNavOpen ? 'Close menu' : 'Open menu'}
         type="button"
