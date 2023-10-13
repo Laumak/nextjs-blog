@@ -1,5 +1,8 @@
 'use client';
 
+// The mobile navigation implemented here is a derived example from
+// this article: https://www.a11ymatters.com/pattern/mobile-nav/
+
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Bars3Icon, XCircleIcon } from '@heroicons/react/24/outline';
