@@ -39,20 +39,15 @@ const Navigation = () => {
         className="z-20"
         aria-label={mobileNavOpen ? 'Close menu' : 'Open menu'}
         type="button"
+        onClick={() => handleOnMobileNavClick(!mobileNavOpen)}
       >
         {mobileNavOpen ? (
-          <span
-            className="flex justify-center items-center md:hidden"
-            onClick={() => handleOnMobileNavClick(!mobileNavOpen)}
-          >
+          <span className="flex justify-center items-center md:hidden">
             <XCircleIcon className="w-6 h-6 mr-1" />
             Close
           </span>
         ) : (
-          <span
-            className="flex justify-center items-center md:hidden"
-            onClick={() => handleOnMobileNavClick(!mobileNavOpen)}
-          >
+          <span className="flex justify-center items-center md:hidden">
             <Bars3Icon className="w-6 h-6 mr-2" />
             Menu
           </span>
