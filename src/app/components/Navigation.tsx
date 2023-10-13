@@ -66,13 +66,19 @@ const Navigation = () => {
       >
         <ul className="text-4xl self-center text-center" id="main-navigation">
           <li className="mb-10" onClick={() => handleOnMobileNavClick(false)}>
-            <Link href="/">Front page</Link>
+            <Link href="/" className="focus:underline">
+              Front page
+            </Link>
           </li>
           <li className="mb-10" onClick={() => handleOnMobileNavClick(false)}>
-            <Link href="/blog/test">Blog test</Link>
+            <Link href="/blog/test" className="focus:underline">
+              Blog test
+            </Link>
           </li>
           <li className="mb-10" onClick={() => handleOnMobileNavClick(false)}>
-            <Link href="/not-found">Not found</Link>
+            <Link href="/not-found" className="focus:underline">
+              Not found
+            </Link>
           </li>
         </ul>
       </div>
