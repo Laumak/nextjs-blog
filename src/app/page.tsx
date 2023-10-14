@@ -14,7 +14,10 @@ export default function Home() {
         </p>
       </Article>
 
-      <Article title="Quis duis qui nisi in cupidatat" link="/blog/test">
+      <Article
+        title="Quis duis qui nisi in cupidatat duis qui nisi in cupidatat duis qui nisi in cupidatat duis qui nisi in cupidatat duis qui nisi in cupidatat"
+        link="/blog/test"
+      >
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat
           blanditiis consequatur voluptatem. Qui magnam ratione dicta

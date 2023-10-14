@@ -6,7 +6,7 @@ interface TagProps {
 }
 
 const Tag = ({ children, backgroundHue }: TagProps) => {
-  let classes = `bg-slate-${backgroundHue} rounded-md py-1 px-2 mr-1 inline-block`;
+  let classes = `bg-slate-${backgroundHue} rounded-md py-1 px-2 mr-1 inline-block text-sm`;
 
   // Make text color white if background goes "dark enough"
   // to not be accessible anymore.
