@@ -22,7 +22,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <MobileNavigation />
 
-        <main className="my-6 mx-4">{children}</main>
+        <main className="my-6 mx-4">
+          <div className="max-w-5xl mx-auto">{children}</div>
+        </main>
         <Analytics />
       </body>
     </html>
