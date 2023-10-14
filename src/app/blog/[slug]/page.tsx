@@ -1,6 +1,8 @@
 import React from 'react';
 import type { Metadata } from 'next';
 
+import Article from '@/app/components/Article';
+
 export const metadata: Metadata = {
   title: 'Blog - Article',
   description: 'An article page of a certain blog.',
@@ -8,11 +10,7 @@ export const metadata: Metadata = {
 
 export default function BlogPage() {
   return (
-    <article>
-      <h2 className="text-2xl">Quis duis qui nisi in cupidatat</h2>
-
-      <small>10.10.2023</small>
-
+    <Article title="Quis duis qui nisi in cupidatat">
       <p className="mb-5">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat
         blanditiis consequatur voluptatem. Qui magnam ratione dicta accusantium
@@ -68,6 +66,6 @@ export default function BlogPage() {
         consectetur labore dolor culpa. Laborum laborum elit enim nostrud duis
         ea. Id proident consectetur tempor eu qui sit commodo duis sunt.
       </p>
-    </article>
+    </Article>
   );
 }
