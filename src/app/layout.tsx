@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <MobileNavigation />
 
-        <main className="m-4">{children}</main>
+        <main className="my-6 mx-4">{children}</main>
         <Analytics />
       </body>
     </html>
