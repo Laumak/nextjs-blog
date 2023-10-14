@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <React.Fragment>
-      <article className="mb-10">
+      <article className="mt-6 mb-10">
         <h2 className="text-2xl">
           <Link href="/blog/test">Quis duis qui nisi in cupidatat</Link>
         </h2>
