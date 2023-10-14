@@ -40,18 +40,18 @@ const Navigation = () => {
       <button
         aria-controls="main-navigation"
         aria-expanded={!!mobileNavOpen}
-        className="z-20"
+        className="z-20 md:hidden"
         aria-label={mobileNavOpen ? 'Close menu' : 'Open menu'}
         type="button"
         onClick={() => handleOnMobileNavClick(!mobileNavOpen)}
       >
         {mobileNavOpen ? (
-          <span className="flex justify-center items-center md:hidden">
+          <span className="flex justify-center items-center">
             <XCircleIcon className="w-6 h-6 mr-1" />
             Close
           </span>
         ) : (
-          <span className="flex justify-center items-center md:hidden">
+          <span className="flex justify-center items-center">
             <Bars3Icon className="w-6 h-6 mr-2" />
             Menu
           </span>
@@ -81,6 +81,33 @@ const Navigation = () => {
           </li>
         </ul>
       </div>
+
+      <ul className="hidden md:flex">
+        <li
+          className="ml-6 hover:underline"
+          onClick={() => handleOnMobileNavClick(false)}
+        >
+          <Link href="/" className="focus:underline">
+            Front page
+          </Link>
+        </li>
+        <li
+          className="ml-6 hover:underline"
+          onClick={() => handleOnMobileNavClick(false)}
+        >
+          <Link href="/blog/test" className="focus:underline">
+            Blog test
+          </Link>
+        </li>
+        <li
+          className="ml-6 hover:underline"
+          onClick={() => handleOnMobileNavClick(false)}
+        >
+          <Link href="/not-found" className="focus:underline">
+            Not found
+          </Link>
+        </li>
+      </ul>
     </nav>
   );
 };
